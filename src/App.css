@@ -1,0 +1,269 @@
+/* 🌸 General Styles */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e0f7fa); /* pink to light teal */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* 🌿 Main App Container */
+.app {
+  background: rgba(255, 255, 255, 0.96);
+  width: 95%;
+  max-width: 850px;
+  margin: 50px auto;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fce4ec;
+  transition: 0.3s;
+}
+
+.app:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #00695c;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* 💖 Login Box */
+.login-box {
+  background: linear-gradient(145deg, #fff0f5, #e3fdfd);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.login-box h2 {
+  color: #00796b;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ✅ Fixed Input Font Color */
+.login-box input {
+  display: block;
+  width: 90%;
+  max-width: 320px;
+  margin: 12px auto;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #f48fb1;
+  background-color: #ffffff;
+  color: #333333; /* 🔥 fixed: dark font for readability */
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.login-box input::placeholder {
+  color: #777; /* subtle placeholder */
+}
+
+.login-box input:focus {
+  border-color: #81d4fa;
+  box-shadow: 0 0 8px rgba(129, 212, 250, 0.5);
+  background-color: #ffffff;
+  color: #212121;
+}
+
+/* ✨ Login Button */
+.login-box button {
+  background: linear-gradient(90deg, #ffb6c1, #81c784); /* pink to green */
+  color: #ffffff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.login-box button:hover {
+  background: linear-gradient(90deg, #ff9aa2, #66bb6a);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-hint {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* 🌼 Dashboard Section */
+.dashboard {
+  text-align: center;
+}
+
+.logout-btn {
+  float: right;
+  background-color: #ef9a9a;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #e57373;
+}
+
+/* 🪴 Admin Add Course Form */
+.add-course-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.add-course-form input {
+  padding: 10px;
+  border: 1.5px solid #c5e1a5;
+  border-radius: 8px;
+  width: 200px;
+  background-color: #ffffff;
+  color: #333333;
+  transition: 0.3s;
+}
+
+.add-course-form input::placeholder {
+  color: #777;
+}
+
+.add-course-form input:focus {
+  border-color: #81c784;
+  box-shadow: 0 0 6px rgba(129, 212, 250, 0.3);
+}
+
+.add-course-form button {
+  background: linear-gradient(90deg, #81d4fa, #4db6ac);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-course-form button:hover {
+  background: linear-gradient(90deg, #4fc3f7, #009688);
+}
+
+/* 📚 Course Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  color: #333; /* ✅ readable table text */
+}
+
+th {
+  background-color: #f48fb1; /* soft pink header */
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+td {
+  background-color: #e0f2f1; /* mint green cells */
+}
+
+tr:hover td {
+  background-color: #f1f8e9;
+}
+
+/* 🎀 Student Course Section */
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-list li {
+  background: linear-gradient(135deg, #fff0f5, #e0f7fa);
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid #f8bbd0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333; /* readable */
+}
+
+.course-list li:hover {
+  background: linear-gradient(135deg, #f8bbd0, #b2dfdb);
+  transform: scale(1.02);
+}
+
+.course-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #004d40;
+}
+
+.selected-list {
+  list-style: none;
+  padding: 15px;
+  background: #e8f5e9;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.selected-list li {
+  padding: 8px;
+  margin: 5px;
+  background-color: #a5d6a7;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #1b5e20;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+
+  .add-course-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logout-btn {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+  }
+}
